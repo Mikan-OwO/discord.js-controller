@@ -1,4 +1,4 @@
-const EventEmitter = require("event").EventEmitter;
+const EventEmitter = require("events").EventEmitter;
 
 class client extends EventEmitter {
  constructor(client, options) {
