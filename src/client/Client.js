@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const EventEmitter = require("events").EventEmitter;
+const { EventEmitter } = require("events");
 
 class client extends EventEmitter {
  constructor(client, options) {
