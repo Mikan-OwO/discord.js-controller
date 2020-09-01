@@ -1,3 +1,5 @@
+const EventEmitter = require("event").EventEmitter;
+
 class client extends EventEmitter {
  constructor(client, options) {
   super();
@@ -10,6 +12,6 @@ class client extends EventEmitter {
   this.emit("message", message);
  }
  get bbb(){
-  return this.ready;
+  return this.readMy;
  }
 }
