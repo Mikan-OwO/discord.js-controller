@@ -1,4 +1,3 @@
-exports.DiscordController = class DiscordController {
-  constructor() {
-  }
+module.exports = {
+  Client: require("./client/Client"),
 }
