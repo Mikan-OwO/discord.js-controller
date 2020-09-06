@@ -3,18 +3,18 @@ const path = require("path");
 
 const { EventEmitter } = require("events");
 
-class client extends EventEmitter {
- constructor(client, options) {
+class Client extends EventEmitter {
+ constructor(options = {}) {
   super();
-  this.client = client;
   this.options = options;
-  this.ready = true; 
  }
- aaa(message){
-  //code
+ test(message){
+  message.channel.send = console.log;
   this.emit("message", message);
  }
  get bbb(){
   return this.readMy;
  }
 }
+
+module.exports = Client;
